@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Leader;
+use App\Models\Program;
+use App\Models\Schedule;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            CategorySeeder::class,
+        ]);
+
+        Program::factory(10)->create();
+        Leader::factory(10)->create();
+        Schedule::factory(25)->create();
     }
 }

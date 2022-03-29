@@ -17,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::group([
     'as' => 'api.',
     'namespace' => 'App\Http\Controllers\Api',
+    'middleware' => ['auth:api']
 ], function () {
     Route::apiResource('categories', 'CategoriesApiController');
 });
+
+//auth routes
+Route::post('api/register', 'App\Http\Controllers\AuthController@register');
+Route::post('api/login', 'App\Http\Controllers\AuthController@login');

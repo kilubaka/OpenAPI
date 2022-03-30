@@ -156,6 +156,432 @@
                     }
                 }
             }
+        },
+        "/leaders": {
+            "get": {
+                "tags": [
+                    "Leaders"
+                ],
+                "summary": "Get list of leaders",
+                "description": "Returns list of leaders",
+                "operationId": "getLeadersList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Leaders"
+                ],
+                "summary": "Store new leader",
+                "description": "Returns created leader data",
+                "operationId": "storeLeader",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreLeaderRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            }
+        },
+        "/leaders/{id}": {
+            "get": {
+                "tags": [
+                    "Leaders"
+                ],
+                "summary": "Get leader information",
+                "description": "Returns category data",
+                "operationId": "getLeaderById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Leader id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Leaders"
+                ],
+                "summary": "Update existing leader",
+                "description": "Returns updated leader data",
+                "operationId": "updateLeader",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Leader id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateLeaderRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Leaders"
+                ],
+                "summary": "Delete existing leader",
+                "description": "Deletes a record and returns no content",
+                "operationId": "deleteLeader",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Leader id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            }
+        },
+        "/programs": {
+            "get": {
+                "tags": [
+                    "Programs"
+                ],
+                "summary": "Get list of programs",
+                "description": "Returns list of programs",
+                "operationId": "getProgramsList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Programs"
+                ],
+                "summary": "Store new program",
+                "description": "Returns created program data",
+                "operationId": "storeProgram",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreProgramRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            }
+        },
+        "/programs/{id}": {
+            "get": {
+                "tags": [
+                    "Programs"
+                ],
+                "summary": "Get program information",
+                "description": "Returns program data",
+                "operationId": "getProgramById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Program id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Programs"
+                ],
+                "summary": "Update existing program",
+                "description": "Returns updated program data",
+                "operationId": "updateProgram",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Program id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateProgramRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Programs"
+                ],
+                "summary": "Delete existing program",
+                "description": "Deletes a record and returns no content",
+                "operationId": "deleteProgram",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Program id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            }
+        },
+        "/schedules": {
+            "get": {
+                "tags": [
+                    "Schedules"
+                ],
+                "summary": "Get list of schedules",
+                "description": "Returns list of schedules",
+                "operationId": "getSchedulesList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Schedules"
+                ],
+                "summary": "Store new schedule",
+                "description": "Returns created schedule data",
+                "operationId": "storeSchedule",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreScheduleRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            }
+        },
+        "/schedules/{id}": {
+            "get": {
+                "tags": [
+                    "Schedules"
+                ],
+                "summary": "Get schedule information",
+                "description": "Returns schedule data",
+                "operationId": "getScheduleById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Schedule id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Schedules"
+                ],
+                "summary": "Update existing schedule",
+                "description": "Returns updated schedule data",
+                "operationId": "updateSchedule",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Schedule id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateScheduleRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Schedules"
+                ],
+                "summary": "Delete existing schedule",
+                "description": "Deletes a record and returns no content",
+                "operationId": "deleteSchedule",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Schedule id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -197,6 +623,182 @@
                     "name": "Category"
                 }
             },
+            "Leader": {
+                "title": "Leader",
+                "description": "Leader model",
+                "properties": {
+                    "id": {
+                        "title": "ID",
+                        "description": "ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "name": {
+                        "title": "Name",
+                        "description": "Name of the Leader",
+                        "type": "string",
+                        "format": "string",
+                        "example": "John Doe"
+                    },
+                    "date_of_birth": {
+                        "title": "Date of Birth",
+                        "description": "Date of Birth of the Leader",
+                        "format": "date",
+                        "example": "2002-01-03"
+                    },
+                    "email": {
+                        "title": "Email",
+                        "description": "Email of the Leader",
+                        "type": "string",
+                        "format": "string",
+                        "example": "carmelo.kreiger@okon.com"
+                    },
+                    "created_at": {
+                        "title": "Created at",
+                        "description": "Created at",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "updated_at": {
+                        "title": "Updated at",
+                        "description": "Updated at",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    }
+                },
+                "type": "object",
+                "xml": {
+                    "name": "Leader"
+                }
+            },
+            "Program": {
+                "title": "Program",
+                "description": "Program model",
+                "properties": {
+                    "id": {
+                        "title": "ID",
+                        "description": "ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "name": {
+                        "title": "Name",
+                        "description": "Name of the Program",
+                        "type": "string",
+                        "format": "string",
+                        "example": "Nostrum voluptas."
+                    },
+                    "description": {
+                        "title": "Description",
+                        "description": "Description of the Program",
+                        "type": "string",
+                        "format": "string",
+                        "example": "Officiis odit ratione quos aspernatur."
+                    },
+                    "category_id": {
+                        "title": "Category ID",
+                        "description": "Category ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    },
+                    "age_restriction": {
+                        "title": "Age Restriction",
+                        "description": "Age Restriction",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 18
+                    },
+                    "cost": {
+                        "title": "Cost",
+                        "description": "Cost",
+                        "type": "number",
+                        "format": "float",
+                        "example": 1200.5
+                    },
+                    "created_at": {
+                        "title": "Created at",
+                        "description": "Created at",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "updated_at": {
+                        "title": "Updated at",
+                        "description": "Updated at",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    }
+                },
+                "type": "object",
+                "xml": {
+                    "name": "Program"
+                }
+            },
+            "Schedule": {
+                "title": "Schedule",
+                "description": "Schedule model",
+                "properties": {
+                    "id": {
+                        "title": "ID",
+                        "description": "ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "from": {
+                        "title": "From",
+                        "description": "Datetime from",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "to": {
+                        "title": "To",
+                        "description": "Datetime to",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "program_id": {
+                        "title": "Program ID",
+                        "description": "Program ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    },
+                    "leader_id": {
+                        "title": "Leader ID",
+                        "description": "Leader ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    },
+                    "created_at": {
+                        "title": "Created at",
+                        "description": "Created at",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "updated_at": {
+                        "title": "Updated at",
+                        "description": "Updated at",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    }
+                },
+                "type": "object",
+                "xml": {
+                    "name": "Schedule"
+                }
+            },
             "StoreCategoryRequest": {
                 "title": "Store Category request",
                 "description": "Store Category request body data",
@@ -213,6 +815,128 @@
                 },
                 "type": "object"
             },
+            "StoreLeaderRequest": {
+                "title": "Store Leader request",
+                "description": "Store Leader request body data",
+                "required": [
+                    "name",
+                    "date_of_birth",
+                    "email"
+                ],
+                "properties": {
+                    "name": {
+                        "title": "name",
+                        "description": "Name of the new leader",
+                        "type": "string",
+                        "format": "string",
+                        "example": "John Doe"
+                    },
+                    "date_of_birth": {
+                        "title": "Date of Birth",
+                        "description": "Date of Birth of the Leader",
+                        "format": "date",
+                        "example": "2002-01-03"
+                    },
+                    "email": {
+                        "title": "Email",
+                        "description": "Email of the Leader",
+                        "type": "string",
+                        "format": "string",
+                        "example": "carmelo.kreiger@okon.com"
+                    }
+                },
+                "type": "object"
+            },
+            "StoreProgramRequest": {
+                "title": "Store Program request",
+                "description": "Store Program request body data",
+                "required": [
+                    "name",
+                    "description",
+                    "category_id",
+                    "age_restriction",
+                    "cost"
+                ],
+                "properties": {
+                    "name": {
+                        "title": "name",
+                        "description": "Name of the new program",
+                        "type": "string",
+                        "format": "string",
+                        "example": "Nostrum voluptas."
+                    },
+                    "description": {
+                        "title": "Description",
+                        "description": "Description of the Program",
+                        "type": "string",
+                        "format": "string",
+                        "example": "Officiis odit ratione quos aspernatur."
+                    },
+                    "category_id": {
+                        "title": "Category ID",
+                        "description": "Category ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    },
+                    "age_restriction": {
+                        "title": "Age Restriction",
+                        "description": "Age Restriction",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 18
+                    },
+                    "cost": {
+                        "title": "Cost",
+                        "description": "Cost",
+                        "type": "number",
+                        "format": "float",
+                        "example": 1200.5
+                    }
+                },
+                "type": "object"
+            },
+            "StoreScheduleRequest": {
+                "title": "Store Schedule request",
+                "description": "Store Schedule request body data",
+                "required": [
+                    "from",
+                    "to",
+                    "program_id",
+                    "leader_id"
+                ],
+                "properties": {
+                    "from": {
+                        "title": "From",
+                        "description": "Datetime from",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "to": {
+                        "title": "To",
+                        "description": "Datetime to",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "program_id": {
+                        "title": "Program ID",
+                        "description": "Program ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    },
+                    "leader_id": {
+                        "title": "Leader ID",
+                        "description": "Leader ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    }
+                },
+                "type": "object"
+            },
             "UpdateCategoryRequest": {
                 "title": "Update Category request",
                 "description": "Update Category request body data",
@@ -225,6 +949,128 @@
                         "description": "Name of the updated category",
                         "type": "string",
                         "example": "A updated category"
+                    }
+                },
+                "type": "object"
+            },
+            "UpdateLeaderRequest": {
+                "title": "Update Leader request",
+                "description": "Update Leader request body data",
+                "required": [
+                    "name",
+                    "date_of_birth",
+                    "email"
+                ],
+                "properties": {
+                    "name": {
+                        "title": "name",
+                        "description": "Name of the updated leader",
+                        "type": "string",
+                        "format": "string",
+                        "example": "John Doe"
+                    },
+                    "date_of_birth": {
+                        "title": "Date of Birth",
+                        "description": "Date of Birth of the Leader",
+                        "format": "date",
+                        "example": "2002-01-03"
+                    },
+                    "email": {
+                        "title": "Email",
+                        "description": "Email of the Leader",
+                        "type": "string",
+                        "format": "string",
+                        "example": "carmelo.kreiger@okon.com"
+                    }
+                },
+                "type": "object"
+            },
+            "UpdateProgramRequest": {
+                "title": "Update Program request",
+                "description": "Update Program request body data",
+                "required": [
+                    "name",
+                    "description",
+                    "category_id",
+                    "age_restriction",
+                    "cost"
+                ],
+                "properties": {
+                    "name": {
+                        "title": "name",
+                        "description": "Name of the update program",
+                        "type": "string",
+                        "format": "string",
+                        "example": "Nostrum voluptas."
+                    },
+                    "description": {
+                        "title": "Description",
+                        "description": "Description of the Program",
+                        "type": "string",
+                        "format": "string",
+                        "example": "Officiis odit ratione quos aspernatur."
+                    },
+                    "category_id": {
+                        "title": "Category ID",
+                        "description": "Category ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    },
+                    "age_restriction": {
+                        "title": "Age Restriction",
+                        "description": "Age Restriction",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 18
+                    },
+                    "cost": {
+                        "title": "Cost",
+                        "description": "Cost",
+                        "type": "number",
+                        "format": "float",
+                        "example": 1200.5
+                    }
+                },
+                "type": "object"
+            },
+            "UpdateScheduleRequest": {
+                "title": "Update Schedule request",
+                "description": "Update Schedule request body data",
+                "required": [
+                    "from",
+                    "to",
+                    "program_id",
+                    "leader_id"
+                ],
+                "properties": {
+                    "from": {
+                        "title": "From",
+                        "description": "Datetime from",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "to": {
+                        "title": "To",
+                        "description": "Datetime to",
+                        "type": "string",
+                        "format": "datetime",
+                        "example": "2020-01-27 17:50:45"
+                    },
+                    "program_id": {
+                        "title": "Program ID",
+                        "description": "Program ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
+                    },
+                    "leader_id": {
+                        "title": "Leader ID",
+                        "description": "Leader ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 123
                     }
                 },
                 "type": "object"

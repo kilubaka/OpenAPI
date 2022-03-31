@@ -47,7 +47,7 @@ class UpdateProgramRequest
      *     title="Category ID",
      *     description="Category ID",
      *     format="int64",
-     *     example=123
+     *     example=1
      * )
      *
      * @var integer

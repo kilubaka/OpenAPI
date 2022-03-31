@@ -55,8 +55,8 @@ class SchedulesApiController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'from' => 'required|date_format:Y-m-d H:i:s',
-            'to' => 'required|date_format:Y-m-d H:i:s',
+            'from' => 'required|string',
+            'to' => 'required|string',
             'program_id' => 'required',
             'leader_id' => 'required'
         ]);
@@ -130,8 +130,8 @@ class SchedulesApiController extends Controller
         $schedule = Schedule::findOrFail($id);
 
         $this->validate($request, [
-            'from' => 'required|date_format:Y-m-d H:i:s',
-            'to' => 'required|date_format:Y-m-d H:i:s',
+            'from' => 'required|string',
+            'to' => 'required|string',
             'program_id' => 'required',
             'leader_id' => 'required'
         ]);
@@ -169,6 +169,8 @@ class SchedulesApiController extends Controller
      */
     public function destroy($id)
     {
-        return Schedule::findOrFail($id)->delete();
+        $schedule = Schedule::findOrFail($id);
+        $schedule->delete();
+        return $schedule;
     }
 }

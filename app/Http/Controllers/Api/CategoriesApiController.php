@@ -163,6 +163,8 @@ class CategoriesApiController extends Controller
      */
     public function destroy($id)
     {
-        return Category::findOrFail($id)->delete();
+        $category = Category::findOrFail($id);
+        $category->delete();
+        return $category;
     }
 }

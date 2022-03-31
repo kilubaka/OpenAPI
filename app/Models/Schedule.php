@@ -31,5 +31,7 @@ class Schedule extends Model
     protected $fillable = [
         'from',
         'to',
+        'program_id',
+        'leader_id',
     ];
 }

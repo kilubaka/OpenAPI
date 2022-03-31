@@ -21,12 +21,12 @@ class UpdateScheduleRequest
      * @OA\Property(
      *     title="From",
      *     description="Datetime from",
-     *     example="2020-01-27 17:50:45",
-     *     format="datetime",
+     *     example="2017-07-21 17:32:28",
+     *     format="date-time",
      *     type="string"
      * )
      *
-     * @var \DateTime
+     * @var string
      */
     public $from;
 
@@ -34,12 +34,12 @@ class UpdateScheduleRequest
      * @OA\Property(
      *     title="To",
      *     description="Datetime to",
-     *     example="2020-01-27 17:50:45",
-     *     format="datetime",
+     *     example="2017-07-21 17:32:28",
+     *     format="date-time",
      *     type="string"
      * )
      *
-     * @var \DateTime
+     * @var string
      */
     public $to;
 
@@ -48,7 +48,7 @@ class UpdateScheduleRequest
      *     title="Program ID",
      *     description="Program ID",
      *     format="int64",
-     *     example=123
+     *     example=1
      * )
      *
      * @var integer
@@ -60,7 +60,7 @@ class UpdateScheduleRequest
      *     title="Leader ID",
      *     description="Leader ID",
      *     format="int64",
-     *     example=123
+     *     example=1
      * )
      *
      * @var integer

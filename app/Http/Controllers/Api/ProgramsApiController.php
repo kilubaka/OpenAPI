@@ -171,6 +171,8 @@ class ProgramsApiController extends Controller
      */
     public function destroy($id)
     {
-        return Program::findOrFail($id)->delete();
+        $program = Program::findOrFail($id);
+        $program->delete();
+        return $program;
     }
 }

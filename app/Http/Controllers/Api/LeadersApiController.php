@@ -167,6 +167,8 @@ class LeadersApiController extends Controller
      */
     public function destroy($id)
     {
-        return Leader::findOrFail($id)->delete();
+        $leader = Leader::findOrFail($id);
+        $leader->delete();
+        return $leader;
     }
 }

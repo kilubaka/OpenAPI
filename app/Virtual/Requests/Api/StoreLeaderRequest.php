@@ -45,7 +45,7 @@ class StoreLeaderRequest
      *     title="Email",
      *     description="Email of the Leader",
      *     format="string",
-     *     example="carmelo.kreiger@okon.com"
+     *     example="carmelo.kreigerna@okon.com"
      * )
      *
      * @var string

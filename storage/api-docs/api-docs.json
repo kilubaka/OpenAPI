@@ -652,7 +652,7 @@
                         "description": "Email of the Leader",
                         "type": "string",
                         "format": "string",
-                        "example": "carmelo.kreiger@okon.com"
+                        "example": "carmelo.kreigerna@okon.com"
                     },
                     "created_at": {
                         "title": "Created at",
@@ -704,7 +704,7 @@
                         "description": "Category ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     },
                     "age_restriction": {
                         "title": "Age Restriction",
@@ -755,29 +755,29 @@
                         "title": "From",
                         "description": "Datetime from",
                         "type": "string",
-                        "format": "datetime",
-                        "example": "2020-01-27 17:50:45"
+                        "format": "date-time",
+                        "example": "2017-07-21 17:32:28"
                     },
                     "to": {
                         "title": "To",
                         "description": "Datetime to",
                         "type": "string",
-                        "format": "datetime",
-                        "example": "2020-01-27 17:50:45"
+                        "format": "date-time",
+                        "example": "2017-07-21 17:32:28"
                     },
                     "program_id": {
                         "title": "Program ID",
                         "description": "Program ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     },
                     "leader_id": {
                         "title": "Leader ID",
                         "description": "Leader ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     },
                     "created_at": {
                         "title": "Created at",
@@ -842,7 +842,7 @@
                         "description": "Email of the Leader",
                         "type": "string",
                         "format": "string",
-                        "example": "carmelo.kreiger@okon.com"
+                        "example": "carmelo.kreigerna@okon.com"
                     }
                 },
                 "type": "object"
@@ -877,7 +877,7 @@
                         "description": "Category ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     },
                     "age_restriction": {
                         "title": "Age Restriction",
@@ -910,29 +910,29 @@
                         "title": "From",
                         "description": "Datetime from",
                         "type": "string",
-                        "format": "datetime",
-                        "example": "2020-01-27 17:50:45"
+                        "format": "date-time",
+                        "example": "2017-07-21 17:32:28"
                     },
                     "to": {
                         "title": "To",
                         "description": "Datetime to",
                         "type": "string",
-                        "format": "datetime",
-                        "example": "2020-01-27 17:50:45"
+                        "format": "date-time",
+                        "example": "2017-07-21 17:32:28"
                     },
                     "program_id": {
                         "title": "Program ID",
                         "description": "Program ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     },
                     "leader_id": {
                         "title": "Leader ID",
                         "description": "Leader ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     }
                 },
                 "type": "object"
@@ -980,7 +980,7 @@
                         "description": "Email of the Leader",
                         "type": "string",
                         "format": "string",
-                        "example": "carmelo.kreiger@okon.com"
+                        "example": "carmelo.kreigerna@okon.com"
                     }
                 },
                 "type": "object"
@@ -1015,7 +1015,7 @@
                         "description": "Category ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     },
                     "age_restriction": {
                         "title": "Age Restriction",
@@ -1048,29 +1048,29 @@
                         "title": "From",
                         "description": "Datetime from",
                         "type": "string",
-                        "format": "datetime",
-                        "example": "2020-01-27 17:50:45"
+                        "format": "date-time",
+                        "example": "2017-07-21 17:32:28"
                     },
                     "to": {
                         "title": "To",
                         "description": "Datetime to",
                         "type": "string",
-                        "format": "datetime",
-                        "example": "2020-01-27 17:50:45"
+                        "format": "date-time",
+                        "example": "2017-07-21 17:32:28"
                     },
                     "program_id": {
                         "title": "Program ID",
                         "description": "Program ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     },
                     "leader_id": {
                         "title": "Leader ID",
                         "description": "Leader ID",
                         "type": "integer",
                         "format": "int64",
-                        "example": 123
+                        "example": 1
                     }
                 },
                 "type": "object"

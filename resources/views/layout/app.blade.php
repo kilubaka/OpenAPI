@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" value="{{ csrf_token() }}" />
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 
-    <title>Vue JS CRUD</title>
+    <title>Vue.js CRUD</title>
     <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
 </head>
 <body>

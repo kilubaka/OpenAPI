@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3 class="text-center">Create Leader</h3>
+        <h3 class="text-center">Edit Leader</h3>
         <div class="row">
             <div class="col-md-6">
                 <form @submit.prevent="updateLeader">
@@ -16,7 +16,7 @@
                         <label>Email</label>
                         <input type="email" class="form-control" v-model="leader.email" required>
                     </div>
-                    <button type="submit" class="btn btn-info">Update</button>
+                    <button type="submit" class="btn btn-info text-white">Update</button>
                 </form>
             </div>
         </div>

@@ -26,7 +26,7 @@
                 </tr>
             </tbody>
         </table>
-        <router-link :to="{name: 'leaderCreate'}" class="btn btn-info">Create</router-link>
+        <router-link :to="{name: 'leaderCreate'}" class="btn btn-info text-white">Create</router-link>
     </div>
 </template>
 

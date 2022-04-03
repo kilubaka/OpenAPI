@@ -8,7 +8,7 @@
                         <label>Name</label>
                         <input type="text" class="form-control" v-model="category.name" required>
                     </div>
-                    <button type="submit" class="btn btn-info">Update</button>
+                    <button type="submit" class="btn btn-info text-white">Update</button>
                 </form>
             </div>
         </div>

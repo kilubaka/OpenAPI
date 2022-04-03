@@ -28,7 +28,7 @@
                         <label>Cost</label>
                         <input type="number" min="1000" max="1000000" step="0.5" class="form-control" v-model="program.cost" required>
                     </div>
-                    <button type="submit" class="btn btn-info">Create</button>
+                    <button type="submit" class="btn btn-info text-white">Create</button>
                 </form>
             </div>
         </div>

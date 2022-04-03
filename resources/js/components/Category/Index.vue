@@ -22,7 +22,7 @@
                 </tr>
             </tbody>
         </table>
-        <router-link :to="{name: 'categoryCreate'}" class="btn btn-info">Create</router-link>
+        <router-link :to="{name: 'categoryCreate'}" class="btn btn-info text-white">Create</router-link>
     </div>
 </template>
 

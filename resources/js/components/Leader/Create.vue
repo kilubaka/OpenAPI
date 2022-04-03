@@ -16,7 +16,7 @@
                         <label>Email</label>
                         <input type="email" class="form-control" v-model="leader.email" required>
                     </div>
-                    <button type="submit" class="btn btn-info">Create</button>
+                    <button type="submit" class="btn btn-info text-white">Create</button>
                 </form>
             </div>
         </div>

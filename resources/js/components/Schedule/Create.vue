@@ -28,7 +28,7 @@
                         <label>To</label>
                         <input type="datetime-local" step="1" class="form-control" v-model="schedule.to" required>
                     </div>
-                    <button type="submit" class="btn btn-info">Create</button>
+                    <button type="submit" class="btn btn-info text-white">Create</button>
                 </form>
             </div>
         </div>
